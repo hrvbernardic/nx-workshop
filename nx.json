@@ -38,6 +38,9 @@
     },
     "store-utility-formatters": {
       "tags": []
+    },
+    "store-feature-game-detail": {
+      "tags": []
     }
   }
 }
