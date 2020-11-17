@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import { map } from "rxjs/operators";
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'bg-hoard-game-detail',
   templateUrl: './game-detail.component.html',
-  styleUrls: ['./game-detail.component.scss']
+  styleUrls: ['./game-detail.component.scss'],
 })
 export class GameDetailComponent {
   constructor(private route: ActivatedRoute) {}

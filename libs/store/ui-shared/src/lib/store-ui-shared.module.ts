@@ -7,6 +7,6 @@ import { HeaderComponent } from './header/header.component';
 @NgModule({
   imports: [CommonModule, MatToolbarModule],
   declarations: [HeaderComponent],
-  exports: [HeaderComponent]
+  exports: [HeaderComponent],
 })
 export class StoreUiSharedModule {}
