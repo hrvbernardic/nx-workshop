@@ -5,5 +5,7 @@ module.exports = {
     '<rootDir>/libs/store/utility-formatters',
     '<rootDir>/libs/store/feature-game-detail',
     '<rootDir>/apps/api',
+    '<rootDir>/libs/api/util-interface',
+    '<rootDir>/libs/util-interface',
   ],
 };
