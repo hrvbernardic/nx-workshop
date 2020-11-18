@@ -5,8 +5,11 @@ on: [pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
-    name: Testing affected apps
+    name: Check affected apps
     steps:
       - uses: actions/checkout@v1
       - uses: bahmutov/npm-install@v1.4.5
+      - run: npm run affected:lint
+      - run: npm run affected:build
       - run: npm run affected:test
+      - run: npm run affected:e2e
