@@ -1,1 +1,1 @@
-export * from './lib/store-utility-formatters';
+export * from './lib/store-util-formatters';

@@ -185,7 +185,7 @@
         }
       }
     },
-    "store-utility-formatters": {
+    "store-util-formatters": {
       "projectType": "library",
       "root": "libs/store/utility-formatters",
       "sourceRoot": "libs/store/utility-formatters/src",

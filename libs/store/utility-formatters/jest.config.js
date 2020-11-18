@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'store-utility-formatters',
+  displayName: 'store-util-formatters',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
