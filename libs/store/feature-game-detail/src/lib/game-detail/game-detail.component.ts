@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { map, switchMap } from 'rxjs/operators';
-import { formatRating } from '@bg-hoard/store/utility-formatters';
+import { formatRating } from '@bg-hoard/store/util-formatters';
 import { Game } from '@bg-hoard/util-interface';
 
 @Component({

@@ -1,12 +1,17 @@
 import { chain, externalSchematic, Rule } from '@angular-devkit/schematics';
 
-export default function (schema: any): Rule {
+export interface UtilLibSchema {
+  name: string;
+  directory: 'store' | 'api' | 'shared';
+}
+
+export default function (schema: UtilLibSchema): Rule {
   return chain([
     externalSchematic('@nrwl/workspace', 'lib', {
       name: `util-${schema.name}`,
       directory: schema.directory,
       linter: 'tslint',
-      tags: `type:util, scope:${schema.directory}`,
+      tags: `scope:${schema.directory}, type:util`,
     }),
   ]);
 }

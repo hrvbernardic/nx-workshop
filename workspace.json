@@ -187,27 +187,27 @@
     },
     "store-util-formatters": {
       "projectType": "library",
-      "root": "libs/store/utility-formatters",
-      "sourceRoot": "libs/store/utility-formatters/src",
+      "root": "libs/store/util-formatters",
+      "sourceRoot": "libs/store/util-formatters/src",
       "prefix": "bg-hoard",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/store/utility-formatters/tsconfig.lib.json",
-              "libs/store/utility-formatters/tsconfig.spec.json"
+              "libs/store/util-formatters/tsconfig.lib.json",
+              "libs/store/util-formatters/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**",
-              "!libs/store/utility-formatters/**/*"
+              "!libs/store/util-formatters/**/*"
             ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/store/utility-formatters/jest.config.js",
+            "jestConfig": "libs/store/util-formatters/jest.config.js",
             "passWithNoTests": true
           }
         }
@@ -353,6 +353,34 @@
           "options": {
             "tsConfig": ["apps/store-ui-shared-e2e/tsconfig.e2e.json"],
             "exclude": ["**/node_modules/**", "!apps/store-ui-shared-e2e/**/*"]
+          }
+        }
+      }
+    },
+    "shared-util-notifications": {
+      "root": "libs/shared/util-notifications",
+      "sourceRoot": "libs/shared/util-notifications/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/util-notifications/tsconfig.lib.json",
+              "libs/shared/util-notifications/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/shared/util-notifications/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/util-notifications/jest.config.js",
+            "passWithNoTests": true
           }
         }
       }

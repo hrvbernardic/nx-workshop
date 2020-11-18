@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { formatRating } from '@bg-hoard/store/utility-formatters';
+import { formatRating } from '@bg-hoard/store/util-formatters';
 
 @Component({
   selector: 'bg-hoard-root',
