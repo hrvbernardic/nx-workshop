@@ -19,41 +19,77 @@
       "runner": "@nrwl/nx-cloud",
       "options": {
         "accessToken": "ODk4MmRjZmItMTIwOS00NDA5LTgxNTktMjE5M2E0MWMwZDFlfHJlYWQtd3JpdGU=",
-        "cacheableOperations": ["build", "test", "lint", "e2e"],
+        "cacheableOperations": [
+          "build",
+          "test",
+          "lint",
+          "e2e"
+        ],
         "canTrackAnalytics": false,
         "showUsageWarnings": true
       }
     }
   },
   "projects": {
-    "store": {
-      "tags": ["scope:store", "type:app"]
-    },
-    "store-e2e": {
-      "tags": ["scope:store", "type:e2e"],
-      "implicitDependencies": ["store"]
-    },
-    "store-ui-shared": {
-      "tags": ["scope:store", "type:ui"]
-    },
-    "store-util-formatters": {
-      "tags": ["scope:store", "type:util"]
-    },
-    "store-feature-game-detail": {
-      "tags": ["scope:store", "type:feature"]
-    },
     "api": {
-      "tags": ["scope:api", "type:app"]
-    },
-    "util-interface": {
-      "tags": ["scope:shared", "type:util"]
-    },
-    "store-ui-shared-e2e": {
-      "tags": ["scope:store", "type:e2e"],
-      "implicitDependencies": ["store-ui-shared"]
+      "tags": [
+        "scope:api",
+        "type:app"
+      ]
     },
     "shared-util-notifications": {
-      "tags": ["scope:shared", "type:util"]
+      "tags": [
+        "scope:shared",
+        "type:util"
+      ]
+    },
+    "store": {
+      "tags": [
+        "scope:store",
+        "type:app"
+      ]
+    },
+    "store-e2e": {
+      "tags": [
+        "scope:store",
+        "type:e2e"
+      ],
+      "implicitDependencies": [
+        "store"
+      ]
+    },
+    "store-feature-game-detail": {
+      "tags": [
+        "scope:store",
+        "type:feature"
+      ]
+    },
+    "store-ui-shared": {
+      "tags": [
+        "scope:store",
+        "type:ui"
+      ]
+    },
+    "store-ui-shared-e2e": {
+      "tags": [
+        "scope:store",
+        "type:e2e"
+      ],
+      "implicitDependencies": [
+        "store-ui-shared"
+      ]
+    },
+    "store-util-formatters": {
+      "tags": [
+        "scope:store",
+        "type:util"
+      ]
+    },
+    "util-interface": {
+      "tags": [
+        "scope:shared",
+        "type:util"
+      ]
     }
   }
 }
